@@ -524,7 +524,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: How to play
+  m_Text: 'How to play
+
+    movement - W,A,S,D, or arrows
+
+    jump - space
+
+    attack - enter'
 --- !u!222 &383169465
 CanvasRenderer:
   m_ObjectHideFlags: 0

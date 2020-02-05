@@ -6,6 +6,10 @@ TagManager:
   tags:
   - hostile
   - Ground
+  - projectile
+  - Armor_PickUp
+  - Money_PickUp
+  - Sword_PickUp
   layers:
   - Default
   - TransparentFX

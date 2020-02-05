@@ -66,6 +66,9 @@
     <Compile Include="Assets\my_Scripts\GCheck.cs" />
     <Compile Include="Assets\my_Scripts\hostileBasic.cs" />
     <Compile Include="Assets\my_Scripts\PlayerCon.cs" />
+    <Compile Include="Assets\my_Scripts\WeaponSpawn.cs" />
+    <Compile Include="Assets\projectile_script.cs" />
+    <Compile Include="Assets\shooting_Hostile.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/ajd21/OneDrive/Documents/GitHub/2DGameProject/buttons test/buttons test/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
