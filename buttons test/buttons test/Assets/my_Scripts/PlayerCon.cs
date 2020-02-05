@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerCon : MonoBehaviour
 {
-   public bool grounded = false;
+    public bool grounded = false;
     [SerializeField] float HP = 2;
     public float speed;
     public float jumpHeight;
@@ -15,14 +15,14 @@ public class PlayerCon : MonoBehaviour
     Rigidbody2D rb;
 
 
-    float points;
+    public float points;
 
     //refences the sprites to change at runtime
     public Sprite Armored;
     public Sprite NoArmor;
 
     //sets weapons
-   public bool spear = true;
+    public bool spear = true;
     public float WeaponSpeed;
 
     //for weapon spawning
@@ -31,7 +31,7 @@ public class PlayerCon : MonoBehaviour
     public Transform SP;
 
     //animation stuff
-    public Animation noArmorRun;
+    public Animation running;
 
     //climbing
     private float inputVertical;
@@ -98,7 +98,7 @@ public class PlayerCon : MonoBehaviour
             }
             else if (spear == false)
             {
-                if (faceRight == true) { 
+                if (faceRight == true) {
                     Rigidbody2D WeaponInstance;
                     WeaponInstance = Instantiate(sword, SP.position, SP.rotation);
                     WeaponInstance.AddForce(SP.right * WeaponSpeed);
@@ -113,12 +113,12 @@ public class PlayerCon : MonoBehaviour
 
     }
 
-    private void FixedUpdate()
+  /*  private void FixedUpdate()
     {
         RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, Vector2.up, distance, Ladders);
         if(hitInfo.collider != null)
         {
-            if(Input.GetKeyDown(KeyCode.W)|| Input.GetKeyDown(KeyCode.UpArrow))
+            if(Input.GetKey(KeyCode.W)|| Input.GetKey(KeyCode.UpArrow))
             {
                 isClimbing = true;
             }
@@ -136,7 +136,27 @@ public class PlayerCon : MonoBehaviour
         {
             rb.gravityScale = 1;
         }
+    }*/
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.tag == "Ladder" && Input.GetKey(KeyCode.W) || other.tag == "Ladder" && Input.GetKey(KeyCode.UpArrow))
+        {
+            this.rb.velocity = new Vector2(rb.velocity.x, cSpeed);
+        }
+        else if (other.tag == "Ladder" && Input.GetKey(KeyCode.S) || other.tag =="Ladder" && Input.GetKey(KeyCode.DownArrow))
+        {
+            this.rb.velocity = new Vector2(rb.velocity.x, -cSpeed);
+        }
+        else
+        {
+           
+            this.rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y);
+        }
+        
     }
+
+  
 
     //reduce HP when the player collides with enimies
     private void OnCollisionEnter2D(Collision2D other)

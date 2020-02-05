@@ -10,6 +10,7 @@ TagManager:
   - Armor_PickUp
   - Money_PickUp
   - Sword_PickUp
+  - Ladder
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Ladders
   - 
   - 
   - 
@@ -46,4 +47,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: player
+    uniqueID: 2192393375
     locked: 0

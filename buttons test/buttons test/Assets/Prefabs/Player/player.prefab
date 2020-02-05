@@ -172,8 +172,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2102573921
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ad3a69607d7f440c9a81e863bbf035ca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -204,7 +204,7 @@ Rigidbody2D:
   m_GravityScale: 3
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!61 &1153168026920109930
@@ -248,7 +248,8 @@ MonoBehaviour:
   grounded: 0
   HP: 2
   speed: 8
-  jumpHeight: 8
+  jumpHeight: 4
+  points: 0
   Armored: {fileID: 21300000, guid: ad3a69607d7f440c9a81e863bbf035ca, type: 3}
   NoArmor: {fileID: 21300000, guid: ea0f14af4951943249df3e1ba45cbb7b, type: 3}
   spear: 1
@@ -256,7 +257,12 @@ MonoBehaviour:
   jav: {fileID: 5738913578400968904, guid: 79c5ca8e68ffa8a43a93c3ea9bf9d26c, type: 3}
   sword: {fileID: 5477626669497079424, guid: ede201ac621300644bbc1ac17fb6bb2f, type: 3}
   SP: {fileID: 6238027511149050988}
-  noArmorRun: {fileID: 0}
+  running: {fileID: 0}
+  Ladders:
+    serializedVersion: 2
+    m_Bits: 256
+  cSpeed: 5
+  distance: 5
 --- !u!95 &316750900
 Animator:
   serializedVersion: 3
