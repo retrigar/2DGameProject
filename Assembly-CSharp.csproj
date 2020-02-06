@@ -63,7 +63,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\GCheck.cs" />
+    <Compile Include="Assets\Scripts\hostileBasic.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\PlayerCon.cs" />
+    <Compile Include="Assets\Scripts\projectile_script.cs" />
+    <Compile Include="Assets\Scripts\shooting_Hostile.cs" />
+    <Compile Include="Assets\Scripts\WeaponSpawn.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/kathryn/Desktop/Ace/Game Production/GhostNGoblins Project1/buttons test/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
