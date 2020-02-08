@@ -63,6 +63,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\MainMenu.cs" />
+    <Compile Include="Assets\my_animationScript.cs" />
+    <Compile Include="Assets\my_Scripts\animatorOverrideController.cs" />
     <Compile Include="Assets\my_Scripts\GCheck.cs" />
     <Compile Include="Assets\my_Scripts\hostileBasic.cs" />
     <Compile Include="Assets\my_Scripts\PlayerCon.cs" />

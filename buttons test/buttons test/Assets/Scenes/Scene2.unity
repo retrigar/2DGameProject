@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 321009675}
   - component: {fileID: 321009674}
   m_Layer: 8
-  m_Name: GameObject
+  m_Name: oneWayPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -715,8 +715,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 316750900, guid: 2064a132b33d8b847906018ea4e14fd2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2064a132b33d8b847906018ea4e14fd2, type: 3}
+--- !u!1 &1351452416 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1153168026920109931, guid: 2064a132b33d8b847906018ea4e14fd2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1351452415}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1351452417
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351452416}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: 2874e868df8fdbd41a805ac98f44d113, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1725789951
 GameObject:
   m_ObjectHideFlags: 0

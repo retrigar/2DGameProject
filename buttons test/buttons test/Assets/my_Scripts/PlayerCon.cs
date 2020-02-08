@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
+
+
 public class PlayerCon : MonoBehaviour
 {
     public bool grounded = false;
@@ -31,8 +35,10 @@ public class PlayerCon : MonoBehaviour
     public Transform SP;
 
     //animation stuff
-    public Animation running;
-
+    
+    
+    
+    
     //climbing
     private float inputVertical;
     public LayerMask Ladders;
@@ -45,6 +51,9 @@ public class PlayerCon : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
 
+        //animation stuff
+        
+
     }
 
     // Update is called once per frame
@@ -53,6 +62,7 @@ public class PlayerCon : MonoBehaviour
         //basic movement *complete*
         moveInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+        
 
         //turns the player *complete*
         if (faceRight == false && moveInput > 0)
@@ -72,11 +82,13 @@ public class PlayerCon : MonoBehaviour
         //changes the sprite when the HP changes *complete*
         if (HP == 2)
         {
+            
             this.GetComponent<SpriteRenderer>().sprite = Armored;
         }
         if (HP == 1)
         {
             this.GetComponent<SpriteRenderer>().sprite = NoArmor;
+         
         }
 
         //throw weapon
